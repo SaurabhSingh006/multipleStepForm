@@ -3,7 +3,7 @@ let currentSlide = 0;
 let slide = document.querySelectorAll('.form__slide');
 let steps = document.querySelectorAll(".form__step");
 const inputEl = document.querySelectorAll('.form__input');
-const form = document.querySelector('.field-container');
+const form = document.querySelector('.form');
 
 // form.addEventListener('click', (event) => {
 //   const input = event.target;
@@ -47,6 +47,7 @@ const showSlide = (n) => {
 }
 
 const nextPrev = (n) => { 
+  form.scrollIntoView();
   
   //Validate Form
   console.log(validateForm());
